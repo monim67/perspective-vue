@@ -5,7 +5,7 @@
       <PerspectiveVueContainer :config="pv_config"/>
       <DemoContainer :config="demo_config" v-on:positionUpdate="DemoContainer_onPositionUpdate"/>
       <p class="info-note">
-        Hover the mouse pointer over the rectangular field above to move the ball.
+        Touch/Hover the mouse pointer over the rectangular field above to move the ball.
       </p>
     </div>
   </div>
@@ -79,7 +79,24 @@ body {
   margin-left: 370px;
   text-align: center;
 }
-.info-note{
+@media (max-width: 1200px) {
+  .content {
+    margin-left: 240px;
+  }
+  .side-bar {
+    width: 220px;
+  }
+}
+@media (max-width: 1000px) {
+  .content {
+    margin-left: unset;
+    clear: both;
+  }
+  .side-bar {
+    width: auto;
+  }
+}
+.info-note {
   color: yellow;
 }
 </style>
