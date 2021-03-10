@@ -16,6 +16,9 @@
     "@vue/cli-service": "^3.0.3",
     "vue-template-compiler": "^2.5.17"
   },
+  "resolutions": {
+    "serialize-javascript": "^3.1.0"
+  },
   "eslintConfig": {
     "root": true,
     "env": {
